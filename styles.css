@@ -300,16 +300,18 @@ header
 .header__input-wrapper:hover {
   border: solid 2px #a0a2a7;
 }
-.header__input::placeholder {
-  font-size: 16px;
-  font-weight: 600;
+.header__input {
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
   padding-left: 10px;
   opacity: 0.6;
+  outline: none;
 }
 .header__input-button {
   position: absolute;
-  right: 5px;
-  top: 5px;
+  right: 6px;
+  top: 7.5px;
   padding: 16px 24px;
   width: 160px;
   font-size: 16px;
@@ -760,16 +762,17 @@ TESTIMONIALS
   font-weight: 500;
   color: rgb(74, 85, 104);
 }
-.testimonial__user-img {
+.testimonial__user-img--wrapper {
   width: 5rem;
   height: 5rem;
+  object-fit: contain;
   border-radius: 9999px;
+  overflow: hidden;
 }
 .testimonial__user-name {
   color:rgb(36, 62, 99);
   font-size: 1.25rem;
 }
-
 .testimonial__users {
   width: 100%;
   max-width: 500px;
@@ -797,7 +800,7 @@ TESTIMONIALS
 }
 .testimonial__user-navigetion--button {
   padding: 16px;
-  margin: 0 14px;
+  margin: 0 8px;
   border-radius: 9999px;
   cursor: not-allowed;
 }
@@ -1112,7 +1115,7 @@ PHONES
     max-width: 100%;
   }
   .header__input-button {
-    top: 4.7rem;
+    top: 4.8rem;
     right: 50%;
     transform: translateX(50%);
   }
@@ -1123,10 +1126,13 @@ PHONES
     flex-direction: column;
     align-items: center;
   }
+  .prices {
+    margin-right: 0;
+  }
   .testimonial__info-container {
     padding-left: 3rem;
   }
-  .testimonial__user-img {
+  .testimonial__user-img--wrapper {
     width: 4rem;
     height: 4rem;
   }
